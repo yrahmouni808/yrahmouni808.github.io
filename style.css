@@ -78,7 +78,7 @@ html, body {
   
   .jumbotron {
     height: 800px;
-    background-image: url("https://content.codecademy.com/projects/broadway/bg.jpg");
+    background-image: url(/resources/hard_money_cigar.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
