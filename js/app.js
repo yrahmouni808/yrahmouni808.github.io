@@ -14,7 +14,7 @@ form.addEventListener('submit', (e) => {
   submitBtn.innerText = "Aan het zoeken...";
 
   // shows "loading screen"
-  display.innerHTML = 'Momentje...<br><div class="spinner">|</div>';
+  display.innerHTML = 'Momentje...<br><div class="spinner"></div>';
   display.style.opacity = 0.5;
 
   let message = bericht(password);
