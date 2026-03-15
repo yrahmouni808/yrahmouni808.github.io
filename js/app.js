@@ -15,8 +15,7 @@ form.addEventListener('submit', (e) => {
 
   let message = bericht(password);
 
-  // shows "loading screen"
-  display.innerHTML = 'Hallo ' + currentName +  '!<br>Momentje...<br><div class="spinner"></div>';
+  display.innerHTML = 'Momentje...<br><div class="spinner"></div>';
   display.style.opacity = 0.5;
 
   setTimeout(() => {
