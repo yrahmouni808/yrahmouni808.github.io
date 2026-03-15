@@ -41,7 +41,7 @@ function bericht(password) {
   } else if (pw === "diva") {
     currentName = "zahira";
     response = "Jij hebt <span class='highlight'>Samira</span>!";
-  } else if (pw === "lewangoalski") {
+  } else if (pw === "bobert lewangoalski") {
     currentName = "khalil";
     response = "Jij hebt <span class='highlight'>Majid</span>!";
   } else if (pw === "honda fireblade") {
