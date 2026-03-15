@@ -13,11 +13,11 @@ form.addEventListener('submit', (e) => {
   submitBtn.disabled = true;
   submitBtn.innerText = "Aan het zoeken...";
 
-  // shows "loading screen"
-  display.innerHTML = 'Momentje...<br><div class="spinner"></div>';
-  display.style.opacity = 0.5;
-
   let message = bericht(password);
+
+  // shows "loading screen"
+  display.innerHTML = 'Hallo ' + currentName +  '!<br>Momentje...<br><div class="spinner"></div>';
+  display.style.opacity = 0.5;
 
   setTimeout(() => {
     //result
@@ -36,25 +36,25 @@ function bericht(password) {
   const pw = password.toLowerCase();
 
   if (pw === "michmich") {
-    currentName = "samira";
-    response = "Jij hebt <span class='highlight'>Zahira</span>!";
+    currentName = "Samira";
+    response = "Hallo Samira!<br>Jij hebt <span class='highlight'>Zahira</span>!";
   } else if (pw === "diva") {
-    currentName = "zahira";
-    response = "Jij hebt <span class='highlight'>Samira</span>!";
+    currentName = "Zahira";
+    response = "Hallo Zahira!<br>Jij hebt <span class='highlight'>Samira</span>!";
   } else if (pw === "bobert lewangoalski") {
-    currentName = "khalil";
-    response = "Jij hebt <span class='highlight'>Majid</span>!";
+    currentName = "Khalil";
+    response = "Hallo Khalil!<br>Jij hebt <span class='highlight'>Majid</span>!";
   } else if (pw === "honda fireblade") {
-    currentName = "majid";
-    response = "Jij hebt <span class='highlight'>Wakil</span>!";
+    currentName = "Majid";
+    response = "Hallo Majid!<br>Jij hebt <span class='highlight'>Wakil</span>!";
   } else if (pw === "hbiba") {
-    currentName = "wakil";
-    response = "Jij hebt <span class='highlight'>Hana</span>!";
+    currentName = "Wakil";
+    response = "Hallo Wakil!<br>Jij hebt <span class='highlight'>Hana</span>!";
   } else if (pw === "lieflief") {
-    currentName = "hana";
-    response = "Jij hebt <span class='highlight'>Khalil</span>!";
+    currentName = "Hana";
+    response = "Hallo Hana!<br>Jij hebt <span class='highlight'>Khalil</span>!";
   } else if (pw === "sigma") {
-    currentName = "sigma";
+    currentName = "Sigma";
     response = "<span class='highlight'>erm wattesigma</span>";
   } else {
     currentName = ""; // Reset if wrong
@@ -64,7 +64,8 @@ function bericht(password) {
 }
 
 function changeBGImage (name) {
-  switch (name) {
+  let newName = name.toLowerCase();
+  switch (newName) {
     case 'samira':
       document.body.style.backgroundImage = "url('../img/samira.avif')";
       break;
