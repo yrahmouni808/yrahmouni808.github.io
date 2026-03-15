@@ -1,0 +1,87 @@
+:root {
+  --primary: #6366f1;
+  --bg: #f8fafc;
+  --text: #1e293b;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("../img/question-marks.jpg")
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 { font-size: 1.5rem; margin-bottom: 1.5rem; }
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus { border-color: var(--primary); }
+
+button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  transition: opacity 0.2s;
+}
+
+button:hover { opacity: 0.9; }
+
+#response {
+  margin-top: 1.5rem;
+  font-weight: 500;
+  min-height: 1.5rem;
+  line-height: 1.4;
+  transition: opacity 0.15s;
+}
+
+.highlight { color: var(--primary); font-weight: bold; }
+/* ... keep your existing CSS and add this ... */
+.name-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.name-list li {
+  background: #e2e8f0;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+#response {
+  font-size: 2rem;
+}
