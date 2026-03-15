@@ -13,7 +13,10 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-image: url("../img/question-marks.jpg")
+  background-image: url("../img/question-marks.jpg");
+  transition: background-image 0.8s ease-in-out;
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
@@ -64,7 +67,7 @@ button:hover { opacity: 0.9; }
 }
 
 .highlight { color: var(--primary); font-weight: bold; }
-/* ... keep your existing CSS and add this ... */
+
 .name-list {
   list-style: none;
   padding: 0;
@@ -84,4 +87,19 @@ button:hover { opacity: 0.9; }
 
 #response {
   font-size: 2rem;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid var(--primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
